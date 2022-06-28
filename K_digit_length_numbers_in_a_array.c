@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int a[100],n,k,c=0,i,q,r,m=0;
+    scanf("%d%d",&n,&k);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        c=0;
+        q=a[i];
+        if(q==0)
+        {
+            c=c+1;
+        }
+        while(q)
+        {
+            r=q%10;
+            c=c+1;
+            q=q/10;
+        }
+        if(c==k)
+        {
+            m=m+1;
+        }
+    }
+    printf("%d",m);
+}
