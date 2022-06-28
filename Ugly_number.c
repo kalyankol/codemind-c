@@ -19,7 +19,5 @@ int main()
         }
     }
     if(c==0)
-    {
-        printf("Ugly Number");
-    }
+    printf("Ugly Number");
 }
